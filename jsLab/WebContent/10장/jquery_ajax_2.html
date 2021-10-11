@@ -9,6 +9,7 @@
 	$(function() {
 		$("#member").on("submit", function() {//"확인"버튼을 눌렀을 때...
 			var d = $(this).serialize();//폼 요소에 전송할 데이터를 재가공합니다.
+			// d ="username =홍길동&password=1234"
 			alert(d);
 
 			$.ajax({
@@ -25,6 +26,7 @@
 			return false;//action 페이지로 전환되는 것을 차단합니다.
 		});
 	});
+	
 	//]]>
 </script>
 </head>
